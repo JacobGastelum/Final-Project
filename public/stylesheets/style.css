@@ -30,3 +30,10 @@ td {
   border: 2px solid orange;
   color: gold;
 }
+#banner {
+  height: 50px;
+  width: 100%;
+  background-color: dodgerblue;
+  margin: 0;
+  display:inline-block;
+}
