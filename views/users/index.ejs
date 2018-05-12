@@ -12,16 +12,16 @@
 <body>
   <div class="container">
     <h3>
-      <a href="/users/user">Create New User</a>
+      <a href="/users/user">Create New Booking</a>
     </h3>
     <h1>User List</h1>
     <% if(users.length>0) { %>
       <table>
         <thead>
           <tr>
-            <th>User Name</th>
-            <th>Position</th>
-            <th>Salary</th>
+            <th>Contact Name</th>
+            <th>Organization</th>
+            <th>Payment</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
@@ -53,7 +53,7 @@
         </tbody>
       </table>
       <% } else { %>
-        <div>No users found.</div>
+        <div>No bookings found.</div>
         <% } %>
   </div>
 </body>
