@@ -12,10 +12,13 @@ header {
   border-bottom: 10px;
 }
 th {
-  padding: 12px;
+  padding: 11px;
 }
 td {
-  padding: 12px;
+  padding: 11px;
+}
+.td--special {
+  width: 200px
 }
 
 #container {
@@ -39,5 +42,5 @@ td {
 
 }
 table {
-  width: 100%;
+  width: 70%;
 }
