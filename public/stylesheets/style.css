@@ -17,3 +17,10 @@ header {
   margin: auto;
   padding: 10px;
 }
+#orange{
+  margin: 5px;
+  border-radius: 7px;
+  background-color: white;
+  border: 2px solid orange;
+  color: gold;
+}
