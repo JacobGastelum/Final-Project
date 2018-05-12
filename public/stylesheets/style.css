@@ -35,5 +35,9 @@ td {
   width: 100%;
   background-color: dodgerblue;
   margin: 0;
-  display:inline-block;
+  color: white;
+
+}
+table {
+  width: 100%;
 }
