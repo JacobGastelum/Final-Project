@@ -39,9 +39,10 @@
                 <%= users[i].salary%>
               </td>
               <td>
+                  <button class="deleteButton" href="/users/user/<%= users[i]._id%>">
+                      Edit
+                    </button>
                 <a href="/users/user/<%= users[i]._id%>">
-                  Edit
-                </a>
               </td>
               <td>
                 <button class="deleteButton" data-uid="<%= users[i]._id%>">
