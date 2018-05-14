@@ -21,6 +21,7 @@
             <th>Contact Name</th>
             <th>Organization</th>
             <th>Payment</th>
+            <th>Contact Phone #</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
@@ -37,6 +38,10 @@
               <td>
                 <%= users[i].salary%>
               </td>
+              <td>
+                <%= users[i].phoneNumber%>
+              </td>
+
               <td>
                 <a href="/users/user/<%= users[i]._id%>">
                   Edit

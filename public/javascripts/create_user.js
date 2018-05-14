@@ -5,18 +5,21 @@ function createUser() {
     .val()
     .trim();
   const salary = parseInt(salaryVal, 10);
+  
+  const phoneNumberVal = $("input[name=phoneNumber]")
+    .val()
+    .trim();
+  const phoneNumber = parseInt(phoneNumberVal, 10);
 
   const user = {
     name: $("input[name=name]")
       .val()
       .trim(),
-    address: $("textarea[name=address]")
-      .val()
-      .trim(),
     position: $("input[name=position]")
       .val()
       .trim(),
-    salary
+    salary,
+    phoneNumber
   };
 
   const request = $.ajax({
