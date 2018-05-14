@@ -38,7 +38,7 @@ userController.create = function(req, res) {
             res.status(500);
             res.json(err);
         } else {
-            console.log("Successfully created a user.");
+            console.log("Successfully created a booking.");
             res.json(newUser);
         }
     });
@@ -52,8 +52,8 @@ userController.update = function(req, res) {
           $set: {
               name: updatedUser.name,
               phoneNumber: updatedUser.phoneNumber,
-              position: updatedUser.position,
-              salary: updatedUser.salary
+              organization: updatedUser.organization,
+              payment: updatedUser.payment
           }
       },
       { new: true }, // return updated

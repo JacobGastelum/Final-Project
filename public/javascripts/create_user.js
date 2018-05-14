@@ -1,10 +1,10 @@
 $(() => $("#createButton").click(createUser));
 
 function createUser() {
-  const salaryVal = $("input[name=salary]")
+  const paymentVal = $("input[name=payment]")
     .val()
     .trim();
-  const salary = parseInt(salaryVal, 10);
+  const payment = parseInt(paymentVal, 10);
   
   const phoneNumberVal = $("input[name=phoneNumber]")
     .val()
@@ -15,10 +15,10 @@ function createUser() {
     name: $("input[name=name]")
       .val()
       .trim(),
-    position: $("input[name=position]")
+    organization: $("input[name=organization]")
       .val()
       .trim(),
-    salary,
+    payment,
     phoneNumber
   };
 

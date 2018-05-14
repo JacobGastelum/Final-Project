@@ -4,10 +4,10 @@ function updateUser() {
   const url = window.location.pathname;
   const userId = url.substring(url.lastIndexOf("/") + 1);
   console.log(userId);
-  const salaryVal = $("input[name=salary]")
+  const paymentVal = $("input[name=payment]")
     .val()
     .trim();
-  const salary = parseInt(salaryVal, 10);
+  const payment = parseInt(paymentVal, 10);
 
   const phoneNumberVal = $("input[name=phoneNumber]")
     .val()
@@ -18,10 +18,10 @@ function updateUser() {
     name: $("input[name=name]")
       .val()
       .trim(),
-    position: $("input[name=position]")
+    organization: $("input[name=organization]")
       .val()
       .trim(),
-    salary,
+    payment,
     phoneNumber
   };
 
