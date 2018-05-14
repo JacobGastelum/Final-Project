@@ -19,19 +19,13 @@
     <table>
       <tbody>
         <tr>
-          <td class='td--special'>Contact Name</td>
+          <td>Name</td>
           <td>
             <input type="text" name="name" value="<%= user.name %>" />
           </td>
         </tr>
         <tr>
-          <td class='td--special'>Organization</td>
-          <td>
-            <input type="text" name="organization" value="<%= user.organization %>" />
-          </td>
-        </tr>
-        <tr>
-          <td class='td--special'>Organization Address</td>
+          <td>Address</td>
           <td>
             <textarea name="address">
               <%= user.address %>
@@ -39,9 +33,15 @@
           </td>
         </tr>
         <tr>
-          <td class='td--special'>Payment</td>
+          <td>Position</td>
           <td>
-            <input type="number" name="payment" value="<%= user.payment %>" />
+            <input type="text" name="position" value="<%= user.position %>" />
+          </td>
+        </tr>
+        <tr>
+          <td>Salary</td>
+          <td>
+            <input type="number" name="salary" value="<%= user.salary %>" />
           </td>
         </tr>
         <tr>

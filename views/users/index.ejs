@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Booking List</title>
+  <title>Employee List</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
-  <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="/javascripts/delete_user.js"></script>
@@ -13,16 +11,16 @@
 <body>
   <div class="container">
     <h3>
-      <a href="/users/user">Create New Booking</a>
+      <a href="/users/user">Create New User</a>
     </h3>
     <h1>User List</h1>
     <% if(users.length>0) { %>
       <table>
-        <thead id="banner">
+        <thead>
           <tr>
-            <th>Contact Name</th>
-            <th>Organization</th>
-            <th>Payment</th>
+            <th>User Name</th>
+            <th>Position</th>
+            <th>Salary</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
@@ -34,13 +32,13 @@
                 <%= users[i].name%>
               </td>
               <td>
-                <%= users[i].organization%>
+                <%= users[i].position%>
               </td>
               <td>
-                <%= users[i].payment%>
+                <%= users[i].salary%>
               </td>
               <td>
-                <a id='orange' href="/users/user/<%= users[i]._id%>">
+                <a href="/users/user/<%= users[i]._id%>">
                   Edit
                 </a>
               </td>
@@ -54,7 +52,7 @@
         </tbody>
       </table>
       <% } else { %>
-        <div>No bookings found.</div>
+        <div>No users found.</div>
         <% } %>
   </div>
 </body>
