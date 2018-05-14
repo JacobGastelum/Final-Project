@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Employee List</title>
+  <title>Booking List</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -11,16 +11,16 @@
 <body>
   <div class="container">
     <h3>
-      <a href="/users/user">Create New User</a>
+      <a href="/users/user">Create New Booking</a>
     </h3>
-    <h1>User List</h1>
+    <h1>Booking List</h1>
     <% if(users.length>0) { %>
       <table>
-        <thead>
+        <thead id="banner">
           <tr>
-            <th>User Name</th>
-            <th>Position</th>
-            <th>Salary</th>
+            <th>Contact Name</th>
+            <th>Organization</th>
+            <th>Payment</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
@@ -52,7 +52,7 @@
         </tbody>
       </table>
       <% } else { %>
-        <div>No users found.</div>
+        <div>No Bookings found.</div>
         <% } %>
   </div>
 </body>
