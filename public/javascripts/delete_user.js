@@ -17,7 +17,7 @@ type: "delete",
         window.location.reload();
     },
 error: function(jqXHR, textStatus, errorThrown) {
-    console.log("error happend");
+    console.log("error happened");
     console.log(jqXHR, textStatus, errorThrown);
 }
 });
