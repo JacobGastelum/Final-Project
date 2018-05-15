@@ -6,6 +6,8 @@ const user = require("../controllers/user");
 // Get all users
 router.get("/", user.list);
 
+//View details
+router.get("/", user.details);
 // Save user
 router.post("/user", user.create);
 
