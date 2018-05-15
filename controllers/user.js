@@ -33,7 +33,7 @@ userController.details = function(req, res) {
     const userId = req.params.id;
 
     if (userId) {
-        User.findOne({ _id: userId }).exec(function(err, user) {
+        User.findOne({ _id: req.params.id }).exec(function(err, user) {
             if (err) {
                 console.log("Error:", err);
             } else {
