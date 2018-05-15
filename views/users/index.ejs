@@ -23,6 +23,7 @@
             <th>Organization</th>
             <th>Payment</th>
             <th>Contact Phone #</th>
+            <th>Details</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
@@ -42,7 +43,14 @@
               <td>
                 <%= users[i].phoneNumber%>
               </td>
-
+              <td>
+                  <button>
+                    <a href="https://shielded-journey-79042.herokuapp.com/users/details">
+                    Details
+                  </a></button>
+  
+                </td>
+              
               <td>
                 <button>
                   <a href="/users/user/<%= users[i]._id%>">
