@@ -1,5 +1,21 @@
 $(() => $("#updateButton").click(updateUser));
 
+function btnClickHandler() {
+  $('lorem').toggle()
+}
+
+function movehandler(e) {
+  $(coords).html('Coords X: ' + e.clientX + 'Y: ' +e.clientY)
+}
+
+function onInputFocus(e) {
+  $(this).css('background', 'pink')
+}
+
+function onInputBlur(e) {
+  $(e.target).css('background', 'white')
+}
+
 function updateUser() {
   const url = window.location.pathname;
   const userId = url.substring(url.lastIndexOf("/") + 1);
