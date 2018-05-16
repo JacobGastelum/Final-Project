@@ -15,34 +15,17 @@
   <script type="text/javascript" src="/javascripts/create_user.js"></script>
 </head>
 
-<script>  function validation(){
-    var a = document.forms["dataform"]["name"].value;
-    var b = document.forms["dataform"]["organization"].value;
-    var x = document.forms["dataform"]["phoneNumber"].value;
-    var namesequence = /^[a-zA-Z]*$/;
-    var phonesequence = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
-
-    if(namesequence.test(a) == false){
-        alert("name must be alphabetical");
-        return false;}
-    if(phonesequence.test(x) == false){
-        alert("Phone number must be 10 digits long and cannot start with 0 or 1");
-        return false;
-        
-    }}</script>
-
 <body id="greenBackground">
   <h3>
     <a href="/users" class="button btn btn-outline-primary"><i class="fa fa-home"></i>Back to Booking List</a>
   </h3>
   <h1>Create New Booking</h1>
   <table>
-    <form action="" name="dataform">
     <tbody>
       <tr>
         <td>Contact Name</td>
         <td>
-          <input type="text" name="name" onfocusout="validation()" required />
+          <input type="text" name="name" required />
         </td>
       </tr>
       <td>Organization</td>
@@ -53,7 +36,7 @@
       <tr>
         <td>Contact Phone Number</td>
         <td>
-          <input type="number" name="phoneNumber" placeholder="10 digits" onfocusout="validation()" required />
+          <input type="tel" name="phoneNumber" pattern="[\(]\d{3}[\)]\d{3}[\-]d{4}"required />
         </td>
       </tr>
       <tr>
@@ -69,7 +52,6 @@
         </td>
       </tr>
     </tbody>
-  </form>
   </table>
 </body>
 
