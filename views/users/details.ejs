@@ -18,24 +18,36 @@
     <h1>Booking Details</h1>
 
     <table>
-      <tbody>
-        <tr>
-            <td>
-            <%= users[i].name%>
-            </td>
-            <td>
-            <%= users[i].organization%>
-            </td>
-            <td>
-            $ <%= users[i].payment%>
-            </td>
-            <td>
-            <%= users[i].phoneNumber%>
-            </td>
-        </tr>
+            <tbody>
+              <tr>
+                <td class='td--special'>Contact Name</td>
+                <td>
+                    <%= user.name%>
+                </td>
+              </tr>
+                <tr>
+                <td class='td--special'>Organization</td>
+                <td>
+                    <%= user.organization%>
+                </td>
+              </tr>
+              <tr>
+                <td class='td--special'>Contact Phone Number</td>
+                <td>
+                <%= user.phoneNumber%>
+                </td>
+              </tr>
+              <tr>
+                <td>Payment</td>
+                <td>
+                  <%=user.payment%>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
         <tr>
           <td colspan="2">
-            <button><a href="/users/user/<%= users[i]._id%>">Edit</a></button>
             <button><a href="https://shielded-journey-79042.herokuapp.com/users">OK</a></button>
           </td>
         </tr>
