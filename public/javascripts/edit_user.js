@@ -39,6 +39,5 @@ function updateUser() {
   request.done(data => console.log(data));
   request.fail(function(jqXHR, textStatus, errorThrown) {
     console.log(jqXHR, textStatus, errorThrown);
-    window.location.reload();
   });
 }
