@@ -7,7 +7,7 @@ const user = require("../controllers/user");
 router.get("/", user.list);
 
 //View details
-router.get("/user/:id?", user.details);
+router.get("/details/:id", user.details);
 
 // Save user
 router.post("/user", user.create);

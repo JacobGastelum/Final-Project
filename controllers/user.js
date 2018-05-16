@@ -30,19 +30,13 @@ userController.edit = function(req, res) {
 };
 
 userController.details = function(req, res) {
-    const userId = req.params.id;
-
-    if (userId) {
-        User.findOne({ _id: req.params.id }).exec(function(err, user) {
-            if (err) {
+    User.findOne({ _id: req.params.id }).exec(function(err, user) {
+        if (err) {
                 console.log("Error:", err);
             } else {
                 res.render("users/details", { user });
             }
         });
-    } else {
-        res.render("users/create");
-    }
 };
 
 userController.create = function(req, res) {
