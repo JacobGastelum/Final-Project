@@ -25,6 +25,12 @@ function createUser() {
     payment,
     phoneNumber
   };
+    if (user.name.length == 0){
+        alert('You must enter a name');
+        return false;
+    }
+    return true;
+}
 
   const request = $.ajax({
     type: "post",
@@ -37,7 +43,9 @@ function createUser() {
     console.log("creation done", data);
   });
 
+  const requestindex = $.ajax({url: "https://shielded-journey-79042.herokuapp.com/users", type: "get" });
+  setTimeout ("window.location.replace('https://shielded-journey-79042.herokuapp.com/users');", 1500);
+
   request.fail(function(jqXHR, textStatus, errorThrown) {
     console.log(jqXHR, textStatus, errorThrown);
   });
-}
