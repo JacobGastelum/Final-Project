@@ -28,26 +28,8 @@
     if(phonesequence.test(x) == false){
         alert("Phone number must be 10 digits long and cannot start with 0 or 1");
         return false;
-
-    function pageComplete(){
-    var a = document.forms["dataform"]["name"].value;
-    var b = document.forms["dataform"]["organization"].value;
-    var c = document.forms["dataform"]["payment"].value;
-    var x = document.forms["dataform"]["phoneNumber"].value;
-
-    if(a == ""){
-        alert("contact name must be filled out");
-        return false;}
-        if(b == ""){
-        alert("organization must be filled out");
-      return false}
-      if(c == ""){
-        alert("payment must be filled out");
-      return false}
-      if(x == ""){
-        alert("phoneNumber must be filled out");
-      return false}
-    }}}</script>
+        
+    }}</script>
 
 <body id="greenBackground">
   <h3>
@@ -83,7 +65,7 @@
       </tr>
       <tr>
         <td colspan="2">
-          <button id="createButton" onclick="pagecomplete()"><a href="https://shielded-journey-79042.herokuapp.com/users">Create Booking</a></button>
+          <button id="createButton"><a href="https://shielded-journey-79042.herokuapp.com/users">Create Booking</a></button>
         </td>
       </tr>
     </tbody>
