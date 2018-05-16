@@ -16,12 +16,38 @@
 </head>
 
 <script>  function validation(){
+    var a = document.forms["dataform"]["name"].value;
+    var b = document.forms["dataform"]["organization"].value;
     var x = document.forms["dataform"]["phoneNumber"].value;
+    var namesequence = /^[a-zA-Z]*$/;
     var phonesequence = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+
+    if(namesequence.test(a) == false){
+        alert("name must be alphabetical");
+        return false;}
     if(phonesequence.test(x) == false){
         alert("Phone number must be 10 digits long and cannot start with 0 or 1");
         return false;
-    }}</script>
+
+    function pageComplete(){
+    var a = document.forms["dataform"]["name"].value;
+    var b = document.forms["dataform"]["organization"].value;
+    var c = document.forms["dataform"]["payment"].value;
+    var x = document.forms["dataform"]["phoneNumber"].value;
+
+    if(a == ""){
+        alert("contact name must be filled out");
+        return false;}
+        if(b == ""){
+        alert("organization must be filled out");
+      return false}
+      if(c == ""){
+        alert("payment must be filled out");
+      return false}
+      if(x == ""){
+        alert("phoneNumber must be filled out");
+      return false}
+    }}}</script>
 
 <body id="greenBackground">
   <h3>
@@ -34,7 +60,7 @@
       <tr>
         <td>Contact Name</td>
         <td>
-          <input type="text" name="name" required />
+          <input type="text" name="name" onfocusout="validation()" required />
         </td>
       </tr>
       <td>Organization</td>
@@ -45,7 +71,7 @@
       <tr>
         <td>Contact Phone Number</td>
         <td>
-          <input type="number" name="phoneNumber" placeholder="format: (###)###-####" onfocusout="validation()" required />
+          <input type="number" name="phoneNumber" placeholder="10 digits" onfocusout="validation()" required />
         </td>
       </tr>
       <tr>
@@ -57,7 +83,7 @@
       </tr>
       <tr>
         <td colspan="2">
-          <button id="createButton"><a href="https://shielded-journey-79042.herokuapp.com/users">Create Booking</a></button>
+          <button id="createButton" onclick="pagecomplete()"><a href="https://shielded-journey-79042.herokuapp.com/users">Create Booking</a></button>
         </td>
       </tr>
     </tbody>
