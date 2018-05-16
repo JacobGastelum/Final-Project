@@ -35,6 +35,7 @@ function createUser() {
 
   request.done(function(data) {
     console.log("creation done", data);
+    window.location.reload();
   });
 
   request.fail(function(jqXHR, textStatus, errorThrown) {
