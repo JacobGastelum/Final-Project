@@ -43,14 +43,12 @@ a.button {
   -moz-appearance: button;
   text-decoration: none;
   color: initial;
-  padding: 3px;
-  
+  padding: 3px; 
 }
 
 #container {
-  width: 90%;
-  margin: auto;
-  padding: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 #orange{
   background-color: white;
