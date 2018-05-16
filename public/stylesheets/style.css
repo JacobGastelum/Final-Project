@@ -53,11 +53,35 @@ a.button {
   padding: 10px;
 }
 #orange{
-  margin: 5px;
-  border-radius: 7px;
   background-color: white;
-  border: 2px solid orange;
-  color: gold;
+    color: orange;
+    margin: 5px;
+    border-radius: 7px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: orange;
+    border-image: initial;
+}
+#blue {
+  background-color: white;
+    color: blue;
+    margin: 5px;
+    border-radius: 7px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+    border-image: initial;
+}
+
+#red {
+  background-color: white;
+    color: red;
+    margin: 5px;
+    border-radius: 7px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+    border-image: initial;
 }
 
 #greenBackground {
@@ -66,12 +90,16 @@ a.button {
 
 #banner {
   height: 50px;
+
   width: 100%;
   background-color: dodgerblue;
   margin: 0;
   color: white;
 
 }
-table {
+#tableIndex {
   width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
